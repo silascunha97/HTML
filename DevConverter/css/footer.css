@@ -1,0 +1,21 @@
+:root{
+    --color-principal: #332FD0;
+    --color-secundaria: #0002A1;
+    --color-terciaria: #FB2576;
+    --color-quartiaria: #3F0071;
+    --color-sextiaria: #5aba8d;
+    --color-branco-gelo: #fff;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--color-sextiaria);
+    padding: 10px;
+    text-align: center;
+}
+
+footer span{
+    color: var(--color-branco-gelo);
+    font-size: 0.8em;
+    font-weight: 500;
+}

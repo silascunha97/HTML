@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+    <style>
+
+:root{
+            --cor1: #3F0071;
+            --cor2: #9C4FDB;
+            --cor3: #B263F2;
+            --cor4: #8C00FF;
+            --cor5: #009316;
+    }
+
+        @keyframes pisca-pisca{
+            0%  { background-color: #3f0071; }
+            20% { background-color: #fb2576; }
+            40% { background-color: #332fd0;}
+            60% { background-color: #0002a1;}
+            80% { background-color: #7f00ff;}
+            100% {background-color: #412dfd;}
+        }
+
+        div{
+            transition: pisca-pisca 5000ms ease-in;
+        }
+
+    .heart {
+    margin: 200px;
+    background-color: red;
+    height: 200px;
+    transform: rotate(-45deg);
+    width: 200px;
+    position: relative;
+    animation: pisca-pisca 10s infinite;
+    transition: 2s;
+}
+
+.heart:before, .heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    animation: pisca-pisca 10s infinite;
+}
+
+.heart:before {
+    top: -100px;
+}
+
+.heart:after {
+    left: 100px;
+}
+
+h1{
+    font-family: 'Cedarville Cursive', cursive;
+    color: var(--cor3);
+}
+
+.color1{
+    font-family: 'Cedarville Cursive', cursive;
+    color: var(--cor1);
+}
+.color2{
+    font-family: 'Cedarville Cursive', cursive;
+    color: var(--cor2); 
+}
+    </style>
+</head>
+<body>
+    <div class="box-color">
+        <h1> <strong class="color1"> Bom </strong> <strong class="color2"> dia </strong> meu</h1>
+    </div>
+    <div class="heart"></div>
+</body>
+</html>

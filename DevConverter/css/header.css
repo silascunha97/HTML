@@ -1,0 +1,20 @@
+:root{
+    --color-principal: #332FD0;
+    --color-secundaria: #0002A1;
+    --color-terciaria: #FB2576;
+    --color-quartiaria: #3F0071;
+    --color-sextiaria: #5aba8d;
+    --color-branco-gelo: #fff;
+}
+
+header{
+    width: 100%;
+    background-color: var(--color-sextiaria);
+    padding: 20px;
+}
+header h1{
+    color: var(--color-branco-gelo);
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+}

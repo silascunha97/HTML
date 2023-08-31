@@ -1,0 +1,27 @@
+div.grid{
+    background: #ffd1c2;
+    border: 2px solid #f16234;
+    height: 50px;
+}
+
+
+body{
+    background: rgb(5, 162, 253);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.bloco1, .bloco2 {
+    padding: 8px;
+}
+
+.bloco1{
+    background-color: #006dd9;
+}
+
+.bloco2{
+    background-color: #ff7f00;
+}

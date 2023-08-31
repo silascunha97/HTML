@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS3 Folhas de estilos-->
+    <style>
+        :root{
+            --cor1: #3F0071;
+            --cor2: #FB2576;
+            --cor3: #332FD0;
+            --cor4: #0002A1;
+            --cor5: #009316;
+            --cor6: #00ffff;
+            --cor7: #7F00FF;
+        }
+
+        @keyframes pisca-pisca{
+            0%{ background: red; }
+            20% { background: var(--cor1) }
+            40% { background: var(--cor3) }
+            60% { background: var(--cor4) }
+            80% { background: var(--cor6); }
+            100% { background: violet; }
+        }
+
+        .multiplas_cores{
+            animation: pisca-pisca 5s infinite;
+        }
+
+        div{
+            width: 100%;
+            height: 150px;
+            transition: pisca-pisca 2s ease-in;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="multiplas_cores"></div>
+</body>
+</html>
